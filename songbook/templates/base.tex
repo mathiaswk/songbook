@@ -1,0 +1,17 @@
+\documentclass[]{}
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+
+\BLOCK{ include 'frontmatter.tex' }
+
+\begin{songs}{}
+\BLOCK{ for s in songs }
+\VAR{ s.to_tex() }
+\BLOCK{ endfor }
+\end{songs}
+
+\BLOCK{ include 'backmatter.tex' }
+
+\end{document}
