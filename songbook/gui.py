@@ -12,7 +12,7 @@ import sys
 from PySide6.QtCore import Qt, QCoreApplication, QEventLoop, QTimer, Slot
 from PySide6.QtWidgets import QApplication, QLabel, QWizard, QWizardPage, QCheckBox, QVBoxLayout, QProgressBar
 
-from songbook.core import Songbook
+from songbook.base import Songbook
 
 
 class SongbookGui(QWizard):
@@ -26,7 +26,7 @@ class SongbookGui(QWizard):
         Args:
             songbook:
         """
-        super(SongbookWizard, self).__init__(parent)
+        # super(SongbookWizard, self).__init__(parent)
 
         self.addPage(IntroductionPage(self.songbook))
         self.addPage(SongSelectionPage(self.songbook))
@@ -39,6 +39,7 @@ class SongbookGui(QWizard):
         self.resize(800, 600)
 
     def run(self):
+        pass
 
 
 
@@ -55,8 +56,8 @@ class IntroductionPage(QWizardPage):
         msgLabel.setObjectName("MessageLabel")
         msgLabel.setText("Welcome to the Songbook Setup Wizard.")
 
-        widget = QWidget(self)
-        boxLayout = QVBoxLayout(widget)
+        # widget = QWidget(self)
+        # boxLayout = QVBoxLayout(widget)
 
 
 
@@ -67,7 +68,7 @@ class SongSelectionPage(QWizardPage):
 
 class FormPage(QWizardPage):
     def __init__(self, songbook=None):
-        setPixmap
+        # setPixmap
 
         self.setCommitPage(True)
 
@@ -122,9 +123,9 @@ class FinishedPage(QWizardPage):
 
 def run_gui():
     app = QApplication(sys.argv)
-    wizard = SongbookWizard()
-    wizard.show()
+    # wizard = SongbookWizard()
+    # wizard.show()
     sys.exit(app.exec())
 
 if __name__ == "__main__":
-    main()
+    run_gui()

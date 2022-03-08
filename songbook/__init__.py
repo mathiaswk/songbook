@@ -9,7 +9,7 @@
     :license: MIT, see LICENSE for details.
 """
 
-from songbook.core import Songbook
+from songbook.base import Songbook
 
 __version__ = '1.0.0'
 __all__ = ['Songbook']

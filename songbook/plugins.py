@@ -8,9 +8,9 @@
     :license: MIT, see LICENSE for details.
 """
 
-__all__ = [
-    'Addon', 'Extension', 'Mod', 'Plugin', 'Policy', 'Rule',
-]
+# __all__ = [
+#     'Addon', 'Extension', 'Mod', 'Plugin', 'Policy', 'Rule',
+# ]
 
 class Plugin():
     """The summary line for a class docstring should fit on one line.
@@ -30,3 +30,4 @@ class Plugin():
     """
 
     def __init__(self):
+        pass
